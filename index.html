@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset = "utf-8"/>
+    <meta http-equiv="refresh" content="5; URL=localhost:8000/index.php">
+    <title>New Form</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel='stylesheet' href='animate.css' />
+    <link rel="shortcut icon" type="image/png" href="/nodejs1.png"/>
+    <script language = "javascript">
+        function op(){
+            //alert("It gets in function");
+            var g = document.getElementById("name").value;
+            document.getElementById('display').innerHTML+= g;
+        }
+    </script>
+</head>
+<body>
+<div class ="animated hinge">
+    <h1>Sample Form</h1>
+</div>
+
+<!--<%include templates/header.ejs%>-->
+<!--action = "index method = "POST" it actually goes with the form-->
+<form action=index.php method = POST>
+    Enter Name:</br><input type = "text" name = "name"/> </br>
+    Enter Number :</br><input type = "number" name = "num"/></br>
+    <input type = checkbox name = "cb"/>
+    <input type = "submit" onclick = "op();"/>
+</form>
+
+<p><span id = 'display'></span></p>
+</body>
+</html>

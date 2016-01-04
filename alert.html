@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="view.css">
+    <meta charset="UTF-8">
+    <title>ALERT!</title>
+    <script LANGUAGE="javascript">
+        function CONFIRM(){if (!confirm
+                ("Either you have a previous booking or, not enough rooms left, or the Venue you chose is Booked! Press OK"))
+            history.go(-1);
+            return HEY;
+        }
+        document.writeln(CONFIRM())
+    </script>
+</head>
+<body>
+<div align = "center" class = "af">
+    <h2>Hey, it seems that you are stuck.</h2>
+    <h2>Press the button below to change your preferences or Log Out.</h2>
+</div>
+<div align = center>
+    <form action = choicePage.html>
+        <label for="io"></label>
+        <input id = "io" type="submit" value = "Proceed"/>
+    </form>
+</div>
+</body>
+</html>

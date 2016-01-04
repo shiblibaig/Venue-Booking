@@ -1,0 +1,82 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+    <title>Choice Page</title>
+    <link rel="stylesheet" type="text/css" href="view.css" media="all">
+    <link rel = stylesheet href="animate.css">
+    <script type="text/javascript" src="view.js"></script>
+</head>
+<body id="main_body" >
+
+<img id="top" src="top.png" alt="">
+<div id="form_container">
+    <h2>Choose an Option</h2>
+    <h5>In case of no booking you will be redirected.</h5>
+    <h5>In case of you not allowing us to book lesser rooms (in guest house), you will be logged out.</h5>
+    <form id="form_1070899" class="animated jello"  method="post" action="">
+        <div class="form_description">
+        </div>
+        <ul >
+            <form action="mainPage.html">
+                <li class="buttons" >
+                    <input type="hidden" name="form_id" value="1070899" />
+
+                    <input id="saveForm1" class="button_text" type="hidden" name="submit" value="Reload the Page" />
+                </li>
+            </form>
+            <form action="normalBooking.html">
+                <li class="buttons" >
+                    <input type="hidden" name="form_id" value="1070899" />
+
+                    <input id="saveForm7" class="button_text" type="submit" name="submit" value="Book a Venue" />
+                </li>
+            </form>
+            <form action="guestHouseBooking.html">
+                <li class="buttons" >
+                    <input type="hidden" name="form_id" value="1070899" />
+
+                    <input id="saveForm6" class="button_text" type="submit" name="submit" value="Book room in Guest House" />
+                </li>
+            </form>
+            <form action="status.php">
+                <li class="buttons">
+                    <input type="hidden" name="form_id" value="1070899" />
+
+                    <input id="saveForm2" class="button_text" type="submit" name="submit" value="Status of my Request" />
+                </li>
+            </form>
+            <form action="statusall.php">
+                <li class="buttons">
+                    <input type="hidden" name="form_id" value="1070899" />
+
+                    <input id="saveForm3" class="button_text" type="submit" name="submit" value="Status of Venues" />
+                </li>
+            </form>
+            <form action="reject.php">
+                <li class="buttons">
+                    <input type="hidden" name="form_id" value="1070899" />
+
+                    <input id="saveForm4" class="button_text" type="submit" name="submit" value="Cancel my Booking" />
+                </li>
+            </form>
+            <form action="mainPage.html">
+                <li class="buttons">
+                    <input type="hidden" name="form_id" value="1070899" />
+
+                    <input id="saveForm5" class="button_text" type="submit" name="submit" value="Logout" />
+                </li>
+            </form>
+            <form method="post" action="help.html">
+                <li class="buttons">
+                    <input type="hidden" name="form_id" value="1070899" />
+
+                    <input id="saveForm8" class="button_text" type="submit" name="submit" value="Help" />
+                </li>
+            </form>
+        </ul>
+    </form>
+</div>
+<img id="bottom" src="bottom.png" alt="">
+</body>
+</html>
